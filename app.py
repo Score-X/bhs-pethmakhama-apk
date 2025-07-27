@@ -2,10 +2,10 @@ from flask import Flask, send_file
 
 app = Flask(__name__)
 
-@app.route('/app.apk')
+@app.route('/bhs-makhama.apk')
 def serve_apk():
     try:
-        return send_file('app.apk', as_attachment=True)
+        return send_file('bhs-makhama.apk', as_attachment=True)
     except Exception as e:
         return f"Error: {e}", 500
 
